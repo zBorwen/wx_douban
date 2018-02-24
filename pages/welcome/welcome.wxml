@@ -1,0 +1,10 @@
+<!--wxml 写小程序的骨架-->
+<view class="container">
+    <view class="user-info">
+        <image class="avatar" src="/images/avatar/1.jpg"></image>
+        <text class="username">新年快乐,同学们</text>
+    </view>
+    <view class="title" bindtap="onStartTap">
+        <text>开启小程序</text>
+    </view>
+</view>

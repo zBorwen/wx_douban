@@ -1,0 +1,18 @@
+@import "post-template/post-template.wxss";
+page{
+    background-color: #ebebeb; 
+}
+
+swiper{
+    width: 100%;
+    height: 450rpx;
+}
+.post-swiper{
+    width: 100%;
+    height: 450rpx;
+}
+
+.post-swiper image{
+    width: 100%;
+    height: 450rpx;
+}

@@ -1,0 +1,87 @@
+.content{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30rpx;
+    margin-bottom: 30rpx;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    background: #fff;
+}
+
+.post-author{
+    margin: 10rpx 0 15rpx 10rpx;
+}
+
+.avatar{
+    width: 60rpx;
+    height: 60rpx;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.user{
+    font-size: 14px;
+    vertical-align: middle;
+    margin-left: 10rpx;
+}
+
+.date{
+    font-size: 14px;
+    vertical-align: middle;
+    margin-left: 10rpx;
+    color: #ccc;
+}
+
+.post-title{
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+.post-img{
+    /*width: 750rpx;*/
+    width: 100%;
+    height: 400rpx;
+}
+
+.post-content{
+    font-size: 12px;
+    padding: 10px;
+    letter-spacing: 2rpx;
+    height: 50rpx;
+    text-align:justify;
+    overflow: hidden;
+    /*white-space: nowrap;
+    text-overflow: ellipsis;*/
+}
+
+.post-line{
+    width: 100%;
+    height: 1px;
+    background: rgba(0, 0, 0, .3);
+    transform: scaleY(.2);
+    margin-top: 5px;
+}
+
+.post-like{
+    display: flex;
+    flex-direction: row;
+    font-size: 16px;
+    color: #aaa;
+    margin: 10rpx 0 10rpx 10rpx;
+}
+
+.post-like-img{
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    margin-right: 10rpx;
+    margin-top: 2px;    
+}
+
+.post-like-num{
+    font-size: 14px;
+    vertical-align: middle;
+    margin-right: 20rpx;
+}

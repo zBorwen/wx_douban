@@ -1,0 +1,11 @@
+@import '../movie/movie-template.wxss';
+.single-movie{
+    margin-right: 6rpx;
+    margin-bottom: 30rpx;
+    float: left;
+}
+
+.grid-container{
+    margin-top: 40rpx;
+    height: 1400rpx;
+}

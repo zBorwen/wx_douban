@@ -1,0 +1,11 @@
+@import "../comment/comment-template.wxss";
+.comment-container{
+    height: 1300rpx;
+    margin-left: 20rpx;
+}
+
+.star image{
+    width: 28rpx;
+    height: 28rpx;
+}
+

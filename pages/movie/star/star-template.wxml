@@ -1,0 +1,16 @@
+<template name="starTemplate">
+    <view class="star-container">
+        <view class="stars">
+            <block wx:for="{{movie.star.light}}">
+                <image wx:if="{{item}}" src="/images/icon/star_light.png"></image>
+            </block>
+
+            <image wx:for="{{movie.star.half}}" src="/images/icon/star_half.png"></image>
+
+            <block wx:for="{{movie.star.light}}">
+                <image wx:if="{{!item}}" src="/images/icon/star_gray.png"></image>
+            </block>
+        </view>
+        <text class="score">{{movie.average}}</text>
+    </view>
+</template>

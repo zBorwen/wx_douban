@@ -1,0 +1,10 @@
+<import src="../star/star-template.wxml" />
+<template name="movieTemplate">
+    <view class="movie-container" catchtap="onDetailTap" data-id="{{movie.movieId}}" data-title="{{movie.title}}">
+        <image class="movie-img" src="{{movie.coverImg}}"></image>
+        <text class="movie-title">{{movie.title}}</text>
+        <view class="movie-star">
+            <template is="starTemplate" data="{{movie}}"/>
+        </view>
+    </view>
+</template>

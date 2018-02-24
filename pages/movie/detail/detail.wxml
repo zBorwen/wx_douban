@@ -1,0 +1,55 @@
+<import src="../star/star-template.wxml"/>
+<import src="../comment/comment-template.wxml"/>
+<view class="detail-container">
+    <view class="bg">
+        <image class="movie-bg" src="{{movie.movieImg}}" mode="widthFix"></image>
+    </view>
+    <image class="movie-img" src="{{movie.movieImg}}"></image>
+    <view class="movie-main">
+        <view class="movie-title">
+            <text class="title">{{movie.title}}</text>
+            <text class="oringnal">{{movie.original}}</text>
+        </view>
+
+        <view class="movie-tool">
+            <text class="rate-score">{{movie.score}}</text>
+            <view class="rate">
+                <view class="star">
+                    <template is="starTemplate" data="{{movie}}"/>
+                </view>
+                <text class="comment">{{movie.comment}}人评价</text>
+            </view>
+        </view>
+    </view>
+    
+    <view class="movie-info">
+        <view class="gener flex-row">
+            <text>{{movie.genres}}</text>
+        </view>
+        <view class="country-year flex-row">
+            <text>{{movie.year}}上映</text>
+            <text>{{movie.country}}</text>
+        </view>
+        <view class="director-casts flex-row">
+            <text>{{movie.director}}(导演) {{movie.casts}}</text>
+        </view>
+    </view>
+
+    <view class="line"></view>
+
+    <view class="summary">
+        <text class="summary-title">{{movie.title}}的剧情简介</text>
+        <text class="summary-txt">{{movie.summary}}</text>
+    </view>
+
+    <view class="line"></view>
+
+    <view class="comment">
+        <view class="comment-count">短评({{movie.comment}})</view>
+        <view class="comment-item">
+            <template is="commentTemplate" data="{{commentData}}"/>
+        </view>
+    </view>
+
+        <button catchtap="moreCommentTap" class="more-comment" type="default" hover-class="more">查看更多短评</button>
+</view>

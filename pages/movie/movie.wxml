@@ -1,0 +1,36 @@
+<import src="list/list-template.wxml" />
+<import src="grid/grid-template.wxml"/>
+<view class="search">
+    <icon class="serach-icon" type="search" size="15" color="#405f80"></icon>
+    <input class="search-movie" type="text" placeholder="欢乐好声音" placeholder-class="placeholder" bindfocus="onFocus" bindconfirm="onConfirm"/>
+    <icon class="serach-cancel" type="cancel" size="18" color="#405f80" catchtap="onCancel"></icon>
+</view>
+
+<view class="movies-container" wx:if="{{containerShow}}">
+    <view class="list">
+        <template is="listTemplate" data="{{...inTheaters}}"/>
+    </view>
+    <view class="list">
+        <template is="listTemplate" data="{{...comingSoon}}"/>
+    </view>
+    <view class="list">
+        <template is="listTemplate" data="{{...top250}}"/>
+    </view>
+</view>
+
+<view class="history" wx:if="{{historyShow}}">
+    <view class="word">
+        <text class="record">历史记录</text>
+        <text class="clear">清除</text>
+    </view>
+    <view class="line"></view>
+    <view class="search-history">
+        <block wx:for="{{historyRecord}}">
+            <view class="search-item" catchtap="onItemTap" data-item="{{item}}">{{item}}</view>
+        </block>
+    </view>
+</view>
+
+<view class="search-panel" wx:if="{{searchShow}}">
+    <template is="gridTemplate" data="{{...searchResult}}"/>
+</view>

@@ -1,0 +1,21 @@
+<template name="postTemplate">
+    <view class="content">
+        <view class="post-author">
+            <image class="avatar" src="{{item.avatar}}"></image>
+            <text class="user">{{item.author}}</text>
+            <text class="date">{{item.date}}</text>
+        </view>
+        <text class="post-title">{{item.title}}</text>
+        <image class="post-img" src="{{item.postImg}}"></image>
+        <text class="post-content">{{item.content}}</text>
+        <view class="post-line"></view>
+        <view class="post-like">
+            <image class="post-like-img" src="/images/icon/heart.png"></image>
+            <text class="post-like-num">{{item.star}}</text>
+            <image class="post-like-img" src="/images/icon/comment.png"></image>
+            <text class="post-like-num">{{item.comment}}</text>
+            <image class="post-like-img" src="/images/icon/view.png"></image>
+            <text class="post-like-num">{{item.view}}</text>
+        </view>
+    </view>
+</template>

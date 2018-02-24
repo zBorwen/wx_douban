@@ -1,0 +1,3 @@
+<import src="../grid/grid-template.wxml"/>
+
+<template is="gridTemplate" data="{{movies}}"/>

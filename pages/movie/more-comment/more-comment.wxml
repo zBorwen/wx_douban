@@ -1,0 +1,8 @@
+<import src="../comment/comment-template.wxml" />
+<view>
+    <!--<scroll-view scroll-y="true" class="comment-container" bindscrolltolower="onScrollLowerTap">-->
+    <view class="comment-container">
+        <template is="commentTemplate" data="{{commentData}}"/>
+    </view>
+    <!--</scroll-view>-->
+</view>

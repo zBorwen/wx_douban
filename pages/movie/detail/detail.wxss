@@ -1,0 +1,152 @@
+@import "../star/star-template.wxss";
+@import "../comment/comment-template.wxss";
+.detail-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.bg{
+    width: 100%;
+    height: 320rpx;
+    overflow: hidden;
+}
+
+.movie-bg{
+    width: 100%;
+    height: 320rpx;
+    filter: brightness(.3);
+    box-shadow: 0 1rpx 10rpx #960;
+    position: relative;
+}
+
+.movie-img{
+    width: 175rpx;
+    height: 240rpx;
+    position: absolute;
+    left: 30rpx;
+    top: 110rpx;
+}
+
+.movie-main{
+    position: absolute;
+    top: 130rpx;
+    left: 235rpx;
+}
+
+.movie-title{
+    display: flex;
+    flex-direction: column;
+    font-size: 38rpx;
+    color: #e1e1e1;
+}
+
+.oringnal{
+    font-size: 24rpx;
+    color: #e5e5e5;
+    margin-top: 5px;
+}
+
+.movie-tool{
+    width: 300rpx;
+    /*height: 100rpx;*/
+    margin-top: 5px;
+}
+
+.rate-score{
+    font-size: 36px;
+    color: #fff;
+    float: left;
+}
+
+.rate{
+    float: right;
+}
+
+.star{
+    margin-bottom: 2px;
+}
+
+.star image{
+    width: 28rpx;
+    height: 28rpx;
+}
+
+.comment{
+    font-size: 14px;
+    color: #9b9b9b;
+    margin-left: 10rpx;
+}
+
+.movie-info{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20rpx;
+    padding: 30rpx;
+    font-size: 26rpx;
+    color: #353535;
+}
+
+.movie-info text{
+    letter-spacing: 2rpx;
+    text-shadow: 0 0 1px #353535;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+}
+
+.line{
+    width: 100%;
+    height: 1px;
+    background: rgba(0, 0, 0, .3);
+    transform: scaleY(.2);
+    margin-top: 10rpx;
+}
+
+.summary{
+    display: flex;
+    flex-direction: column;
+    padding: 30rpx;
+}
+
+.summary-title{
+    font-size: 28rpx;
+    color:#bababa;
+    margin-top: 5rpx;
+}
+
+.summary-txt{
+    font-size: 28rpx;
+    color: #474747;
+    letter-spacing: 2rpx;
+    margin-top: 20rpx;
+}
+
+.comment{
+    margin-top: 15rpx;
+}
+
+.comment-count{
+    font-size: 28rpx;
+    color: #b1b1b1;
+    margin-left: 35rpx;
+    margin-top: 20rpx;
+}
+
+.more-comment{
+    padding: 5rpx 30rpx;
+    text-align: center;
+    margin-top: 30rpx;
+}
+
+.more{
+    background-color: red;
+}
+
+.more-comment button{
+    font-size: 30rpx;
+    color: #6ecb7d;
+    background: #fff;
+}

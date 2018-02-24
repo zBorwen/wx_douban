@@ -1,0 +1,29 @@
+<import src="post-template/post-template.wxml" />
+<view class="post-container">
+    <swiper duration="1000" interval="3000" autoplay="true" indicator-dots="true" circular="true" bindtap="onSwiperTap">
+        <swiper-item class="post-swiper">
+            <image src="/images/image/4.jpg" data-postId="3" data-title='Powerbeats3'></image>
+        </swiper-item>
+        <swiper-item class="post-swiper">
+            <image src="/images/image/2.jpg" data-postId="1" data-title='锤子 M1 & M1L 测评'></image>
+        </swiper-item>
+        <swiper-item class="post-swiper">
+            <image src="/images/image/1.jpg" data-postId="0" data-title="飞利浦智能手表"></image>
+        </swiper-item>
+        <swiper-item class="post-swiper">
+            <image src="/images/image/3.jpg" data-postId="2" data-title="什么样的杂志能让苹果四面楚歌？"></image>
+        </swiper-item>
+    </swiper>
+
+    <!--
+        绑定事件有两种
+        1.catchtap-- 不冒泡
+        2.bindtap -- 冒泡
+    -->
+    <!--每一篇文章-->
+    <block wx:for="{{postData}}" wx:for-item="item">
+        <view catchtap="onPostTap" data-postId="{{item.postId}}" data-title="{{item.title}}">
+            <template is="postTemplate" data="{{item}}"/>
+        </view>
+    </block>
+</view>

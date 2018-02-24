@@ -1,0 +1,32 @@
+{
+    "pages": [
+        "pages/post/post",
+        "pages/movie/more-comment/more-comment",
+        "pages/movie/detail/detail",
+        "pages/movie/movie",
+        "pages/movie/more/more",
+        "pages/welcome/welcome",
+        "pages/post/post-detail/post-detail"
+    ],
+    "window": {
+      "navigationBarBackgroundColor": "#8C9FF9",
+      "backgroundColor": "#eeeeee",
+      "backgroundTextStyle": "light",
+      "enablePullDownRefresh": false
+    },
+    "tabBar": {
+      "list": [{
+        "pagePath": "pages/post/post",
+        "text": "新闻",
+        "iconPath": "images/icon/read.png",
+        "selectedIconPath": "images/icon/reads.png"
+      },
+      {
+        "pagePath": "pages/movie/movie",
+        "text": "电影",
+        "iconPath": "images/icon/movie.png",
+        "selectedIconPath": "images/icon/movies.png"
+      }],
+      "borderStyle": "white"
+    }
+}

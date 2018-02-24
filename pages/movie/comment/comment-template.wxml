@@ -1,0 +1,22 @@
+<import src="../star/star-template.wxml"/>
+<template name="commentTemplate">
+    <view class="comment-item">  
+        <block wx:for="{{commentData}}" wx:for-item="movie">
+            <view class="item-info">
+                <view class="item-author">
+                    <image class="avatar" src="{{movie.avatar}}"></image>
+                    <text class="name">{{movie.name}}</text>
+                    <view class="star">
+                        <template is="starTemplate" data="{{movie}}"/>
+                    </view>
+                </view>
+
+                <view class="other">
+                    <text class="date">{{movie.date}}</text>
+                    <text class="comments">{{movie.comment}}</text>
+                </view>
+            </view>
+        </block>
+    </view>
+
+</template>
